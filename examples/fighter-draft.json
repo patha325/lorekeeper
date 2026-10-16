@@ -1,0 +1,32 @@
+{
+  "name": "Cemetery Guardian",
+  "class": "Fighter",
+  "species": "Human",
+  "background": "Acolyte",
+  "level": 1,
+  "scores": {
+    "strength": 15,
+    "dexterity": 13,
+    "constitution": 14,
+    "intelligence": 8,
+    "wisdom": 12,
+    "charisma": 10
+  },
+  "modifiers": {
+    "strength": 2,
+    "dexterity": 1,
+    "constitution": 2,
+    "intelligence": -1,
+    "wisdom": 1,
+    "charisma": 0
+  },
+  "proficiency_bonus": 2,
+  "status": "DRAFT \u2014 choices and origin increases require source verification",
+  "remaining": [
+    "Verify class/species/background availability and features",
+    "Verify score generation and origin increases",
+    "Choose proficiencies, equipment, spells, and feats",
+    "Calculate HP, AC, attacks, and resource limits from sources"
+  ],
+  "edition": "2014"
+}

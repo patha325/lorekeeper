@@ -1,0 +1,26 @@
+[build-system]
+requires = ["hatchling>=1.25"]
+build-backend = "hatchling.build"
+
+[project]
+name = "lorekeeper"
+version = "0.1.0"
+description = "Local D&D rules retrieval and character drafting with Ollama and LibreIndex"
+requires-python = ">=3.11"
+dependencies = ["libreindex @ git+https://github.com/patha325/LibreIndex.git@10f28221678904e311af426b22708838a50f05d7"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "build>=1.2"]
+
+[project.scripts]
+lorekeeper = "dnd_companion.cli:main"
+dnd = "dnd_companion.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/dnd_companion"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.hatch.metadata]
+allow-direct-references = true
